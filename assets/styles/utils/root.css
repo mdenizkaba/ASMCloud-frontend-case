@@ -1,0 +1,75 @@
+/* 1. Reset/Normalize */
+@import url('normalize.css');
+@import url('reset.css');       /* Eğer normalize.css'den farklı kurallar eklemek isterseniz */
+@import url('formalize.css');   /* Formalize kullanıyorsanız */
+
+/* 2. Grid Sistem */
+@import url('bootstrap-grid.css');
+
+html, body {
+  font-family: 'Inter', sans-serif;
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow-x: hidden;
+}
+.relative{
+  position: relative;
+}
+.w-full{
+  width: 100%;
+}
+.h-full{
+  height: 100%;
+}
+
+.text-primary {
+  color: #1DD266;
+}
+.bg-primary {
+  background-color: #1DD266;
+}
+
+/* BUTTON START */
+.button {
+  display: inline-flex;
+  height: 56px;
+  color: #FFFFFF;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  text-decoration: none;
+  justify-content: center;
+  align-items: center;
+  padding: 0 16px;
+  font-weight: 600;
+  transition: .3s ease;
+}
+.button.primary {
+  background-color: #1DD266;
+}
+.button.light {
+  background-color: #F3F5FA;
+  color: #A0AEC0;
+}
+.button.button-sm {
+  height: 46px;
+}
+.button.light:hover {
+  background-color: #efeff2;
+  color: #6e7782;
+}
+.button.primary:hover {
+  background-color: #1aad55;
+}
+.button.bordered {
+  border:1px solid #495467;
+}
+.button.bordered:hover {
+  border:1px solid #6c798e;
+}
+/* BUTTON END */
+
+.animate__fadeInUp.custom-distance {
+  --animate-distance: 20px !important; /* default yaklaşık 100px */
+}

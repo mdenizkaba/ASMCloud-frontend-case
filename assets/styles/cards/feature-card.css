@@ -1,0 +1,60 @@
+.feature-card{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  padding: 16px;
+  background-color: #fff;
+  border-radius: 6px;
+  transition: .3s ease-out;
+}
+.feature-card:hover{
+  box-shadow: 0 10px 20px rgba(0,0,0,.05);
+}
+.feature-card:hover .icon{
+  background-color: #1DD266;
+  color: white;
+}
+.feature-card:hover .button{
+  border-color: #1DD266;
+  color: #1DD266;
+}
+.feature-card .icon{
+  width: 56px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: #F3F5FA;
+  color: #A0AEC0;
+  border-radius: 5px;
+  margin-bottom: 16px;
+  transition: .3s ease-out;
+}
+
+.feature-card .icon svg{
+  width: 24px;
+  height: 24px;
+  
+}
+.feature-card h4{
+  font-size:16px;
+  font-weight: 700;
+  color:#465681;
+  text-align:center;
+  margin-bottom: 12px;
+}
+.feature-card span{
+  font-size:14px;
+  font-weight: 400;
+  color:#465681;
+  text-align:center;
+  line-height: 21px;
+  margin-bottom: 24px;
+}
+.feature-card .button{
+  border:1px solid #EEF0F2;
+  color:#677894;
+  font-size:14px;
+  font-weight:600
+}
